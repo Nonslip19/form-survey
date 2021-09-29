@@ -50,20 +50,20 @@
             <div class="input-box">
                 <label for="role"><b>Which option best describes your current role?</b></label> <br><br>
                 <select name="role" id="role">
-                    <option value="" selected>Select current role</option>
-                    <option value="role1">Student</option>
-                    <option value="role1">Teacher</option>
-                    <option value="role1">Full time job</option>
-                    <option value="role1">Part time job</option>
-                    <option value="role1">Full time learner</option>
-                    <option value="role1">Prefer not to say</option>
-                    <option value="role1"></option>
+                    <option value="" disabled selected>Select current role</option> <!-- disable selected sayesinde örnekteki gibi kutucuğun içine placeholder gibi istediğimiz bilgileri yazabiliyoruz ve bu yazzdıklarımızın seçenek haline gelmemesi için disable kullanılıyor. -->
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="Frll time job">Full time job</option>
+                    <option value="Part time job">Part time job</option>
+                    <option value="Full time learner">Full time learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                   
                 </select>
             </div>
             <div class="input-box">
                 <label for="recom"><b> Would you recommend Clarusway to a friend?</b></label> <br><br>
-                <input type="radio" name="recom" id="radio1">
-                <label for="radio1">Definitely, Yes</label><br><br>
+                <input type="radio" name="recom" id="radio1" checked>
+                <label for="radio1" >Definitely, Yes</label><br><br>
                 <input type="radio" name="recom" id="radio2">
                 <label for="radio2">Maybe</label><br><br>
                 <input type="radio" name="recom" id="radio3">
@@ -74,7 +74,7 @@
             <div class="input-box">
                 <label for="feature"><b>What is your favorite of Clarusway?</b></label><br><br>
                 <select name="feature" id="feature">
-                    <option value="" selected>Select an option</option>
+                    <option value="" disabled selected>Select an option</option>
                     <option value="feature1">Courses</option>
                     <option value="feature2">Project</option>
                     <option value="feature3">Community</option>
@@ -99,6 +99,7 @@
             </div>
             <div class="input-box">
                 <input id="" type="submit" value="Submit">
+               
             </div>
 
 
